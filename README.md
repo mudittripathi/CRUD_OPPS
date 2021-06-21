@@ -13,5 +13,5 @@ Make Sure you have Python (3.7)  installed.
 * After you instal python and django, run python manage.py runsrver and navigate to the folder TestCases. 
 * you can now run testcases of all the CRUD operations here by running 'pytest filename.py'
 * Also, you can navigate ti Application_testing folder and test each operations by providing your inputs. 
-* API file is provided under Application_testing folder.
+* API document is provided under Application_testing folder.
 </br >
