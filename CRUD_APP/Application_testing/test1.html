@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module test1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>test1</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cmudittripathi%5Cpycharmprojects%5Ccrud_operations%5Ccrud_app%5Capplication_testing%5Ctest1.py">c:\users\mudittripathi\pycharmprojects\crud_operations\crud_app\application_testing\test1.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="json.html">json</a><br>
+</td><td width="25%" valign=top><a href="requests.html">requests</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-create_existing_User"><strong>create_existing_User</strong></a>()</dt><dd><tt>This&nbsp;function&nbsp;helps&nbsp;check&nbsp;that&nbsp;existing&nbsp;User&nbsp;can&nbsp;not&nbsp;be&nbsp;created.<br>
+you&nbsp;can&nbsp;enter&nbsp;name,id&nbsp;and&nbsp;email&nbsp;in&nbsp;dict<br>
+and&nbsp;that&nbsp;data&nbsp;will&nbsp;throw&nbsp;error&nbsp;that&nbsp;User&nbsp;with&nbsp;this&nbsp;User&nbsp;id&nbsp;already&nbsp;exists.</tt></dd></dl>
+ <dl><dt><a name="-create_new_User"><strong>create_new_User</strong></a>()</dt><dd><tt>This&nbsp;function&nbsp;helps&nbsp;to&nbsp;create&nbsp;new&nbsp;User.<br>
+you&nbsp;can&nbsp;enter&nbsp;name,id&nbsp;and&nbsp;email&nbsp;in&nbsp;dict<br>
+and&nbsp;that&nbsp;data&nbsp;will&nbsp;be&nbsp;inserted&nbsp;in&nbsp;the&nbsp;database&nbsp;by&nbsp;calling&nbsp;post&nbsp;method<br>
+of&nbsp;User_data&nbsp;class&nbsp;in&nbsp;CRUD_APP.views.py</tt></dd></dl>
+ <dl><dt><a name="-delete_User"><strong>delete_User</strong></a>(id=1012)</dt><dd><tt>This&nbsp;function&nbsp;helps&nbsp;to&nbsp;delete&nbsp;existing&nbsp;User.<br>
+you&nbsp;can&nbsp;pass&nbsp;an&nbsp;existing&nbsp;id&nbsp;in&nbsp;this&nbsp;function<br>
+and&nbsp;that&nbsp;data&nbsp;will&nbsp;be&nbsp;deleted&nbsp;from&nbsp;the&nbsp;database&nbsp;by&nbsp;calling&nbsp;delete&nbsp;method<br>
+of&nbsp;User_data&nbsp;class&nbsp;in&nbsp;CRUD_APP.views.py</tt></dd></dl>
+ <dl><dt><a name="-delete_unknown_User"><strong>delete_unknown_User</strong></a>(id=1100)</dt><dd><tt>This&nbsp;function&nbsp;will&nbsp;not&nbsp;delete&nbsp;anything&nbsp;as&nbsp;the&nbsp;user&nbsp;id&nbsp;passed&nbsp;is&nbsp;not&nbsp;present&nbsp;in&nbsp;db.<br>
+you&nbsp;can&nbsp;pass&nbsp;an&nbsp;unknown&nbsp;id&nbsp;in&nbsp;this&nbsp;function<br>
+and&nbsp;that&nbsp;data&nbsp;will&nbsp;be&nbsp;not&nbsp;be&nbsp;deleted&nbsp;from&nbsp;the&nbsp;database.&nbsp;error&nbsp;will&nbsp;be<br>
+'User&nbsp;id&nbsp;not&nbsp;available&nbsp;in&nbsp;our&nbsp;system'</tt></dd></dl>
+ <dl><dt><a name="-get_User"><strong>get_User</strong></a>(id=None)</dt><dd><tt>This&nbsp;function&nbsp;helps&nbsp;to&nbsp;get&nbsp;all&nbsp;the&nbsp;User.<br>
+you&nbsp;can&nbsp;pass&nbsp;id&nbsp;=&nbsp;None<br>
+and&nbsp;you&nbsp;will&nbsp;get&nbsp;all&nbsp;the&nbsp;Users</tt></dd></dl>
+ <dl><dt><a name="-get_unknown_User"><strong>get_unknown_User</strong></a>(id=1100)</dt><dd><tt>This&nbsp;function&nbsp;will&nbsp;not&nbsp;be&nbsp;able&nbsp;to&nbsp;get&nbsp;the&nbsp;user&nbsp;if&nbsp;id&nbsp;passed&nbsp;is&nbsp;unknown&nbsp;(not&nbsp;in&nbsp;db).<br>
+it&nbsp;will&nbsp;print&nbsp;User&nbsp;id&nbsp;not&nbsp;available&nbsp;in&nbsp;our&nbsp;system'</tt></dd></dl>
+ <dl><dt><a name="-update_User"><strong>update_User</strong></a>(id)</dt><dd><tt>This&nbsp;function&nbsp;helps&nbsp;to&nbsp;update&nbsp;existing&nbsp;User.<br>
+you&nbsp;can&nbsp;pass&nbsp;existing&nbsp;id&nbsp;in&nbsp;this&nbsp;function<br>
+and&nbsp;that&nbsp;data&nbsp;will&nbsp;be&nbsp;updated&nbsp;in&nbsp;the&nbsp;database&nbsp;by&nbsp;calling&nbsp;put&nbsp;method<br>
+of&nbsp;User_data&nbsp;class&nbsp;in&nbsp;CRUD_APP.views.py</tt></dd></dl>
+ <dl><dt><a name="-update_unknown_User"><strong>update_unknown_User</strong></a>(id)</dt><dd><tt>This&nbsp;function&nbsp;helps&nbsp;to&nbsp;check&nbsp;if&nbsp;unknown&nbsp;id&nbsp;is&nbsp;passed,&nbsp;it&nbsp;will&nbsp;give&nbsp;no&nbsp;user&nbsp;id&nbsp;in&nbsp;db.<br>
+you&nbsp;can&nbsp;pass&nbsp;an&nbsp;unknown&nbsp;id&nbsp;(not&nbsp;in&nbsp;db)</tt></dd></dl>
+</td></tr></table>
+</body></html>
