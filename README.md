@@ -4,7 +4,7 @@ This is a simple Python3.7 CRUD API project 'CRUD' which has one application 'CR
 </td>
 
 # INSTALLATON
-install python v 3.7 and Django v3.2.4
+install python v 3.7 and Django v 3.2.4
 </br >
 
 # Instructions
